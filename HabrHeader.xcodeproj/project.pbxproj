@@ -11,6 +11,8 @@
 		933542BF2A1F55A60091F019 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933542BE2A1F55A60091F019 /* ContentView.swift */; };
 		933542C12A1F55A70091F019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 933542C02A1F55A70091F019 /* Assets.xcassets */; };
 		933542C42A1F55A70091F019 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 933542C32A1F55A70091F019 /* Preview Assets.xcassets */; };
+		933542CC2A1F57900091F019 /* ScrollDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933542CB2A1F57900091F019 /* ScrollDetector.swift */; };
+		933542CE2A1F585A0091F019 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933542CD2A1F585A0091F019 /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		933542BE2A1F55A60091F019 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		933542C02A1F55A70091F019 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		933542C32A1F55A70091F019 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		933542CB2A1F57900091F019 /* ScrollDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollDetector.swift; sourceTree = "<group>"; };
+		933542CD2A1F585A0091F019 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,10 @@
 		933542BB2A1F55A60091F019 /* HabrHeader */ = {
 			isa = PBXGroup;
 			children = (
+				933542CA2A1F57780091F019 /* Helpers */,
 				933542BC2A1F55A60091F019 /* HabrHeaderApp.swift */,
 				933542BE2A1F55A60091F019 /* ContentView.swift */,
+				933542CD2A1F585A0091F019 /* HomeScreen.swift */,
 				933542C02A1F55A70091F019 /* Assets.xcassets */,
 				933542C22A1F55A70091F019 /* Preview Content */,
 			);
@@ -65,6 +71,14 @@
 				933542C32A1F55A70091F019 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		933542CA2A1F57780091F019 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				933542CB2A1F57900091F019 /* ScrollDetector.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				933542CE2A1F585A0091F019 /* HomeScreen.swift in Sources */,
 				933542BF2A1F55A60091F019 /* ContentView.swift in Sources */,
 				933542BD2A1F55A60091F019 /* HabrHeaderApp.swift in Sources */,
+				933542CC2A1F57900091F019 /* ScrollDetector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +211,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +265,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -267,6 +283,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HabrHeader/Preview Content\"";
+				DEVELOPMENT_TEAM = 8SAAVB2LRU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -274,6 +291,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HabrHeader/Preview Content\"";
+				DEVELOPMENT_TEAM = 8SAAVB2LRU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -302,6 +321,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
